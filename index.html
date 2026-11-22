@@ -12,7 +12,7 @@
   <link rel="icon" href="assets/vyro-motion-logo.webp">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Arabic:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500;600;700;800;900&family=Noto+Sans+Arabic:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
   <title>VYRO Motion — Corporate Post-Production Studio</title>
   <style>
     :root{--bg:#090a09;--surface:#111310;--surface2:#181b17;--ink:#f4f6f1;--paper:#ecefe8;--dark:#111410;--muted:#9aa198;--line:#292d28;--green:#8cff3f;--green2:#b9ff89;--mx:50vw;--my:50vh;--rx:0deg;--ry:0deg}
@@ -54,10 +54,14 @@
     .ink-logo{width:390px;height:230px}.ink-logo .logo-face{width:330px;height:166px;background:#fff}.ink-logo .logo-face img{width:290px;height:145px;object-fit:contain;filter:none;drop-shadow:none}.ink-logo .logo-caption{bottom:-15px}
     @media(max-width:680px){.brand img{width:122px;height:48px;box-shadow:none}.ink-logo{width:250px;height:160px;top:170px}.ink-logo .logo-face{width:218px;height:110px;box-shadow:6px 7px 0 #111,12px 14px 0 #d2cfc8}.ink-logo .logo-face img{width:190px;height:95px}.ink-logo .logo-caption{bottom:-16px}}
     /* Arabic shaping and Apple-platform typography */
+    body,button,input,textarea,select{font-family:"Noto Sans Arabic","Noto Sans","Geeza Pro","SF Arabic",Tahoma,Arial,sans-serif}
     html[lang="ar"] body{font-family:"Noto Sans Arabic","Geeza Pro","SF Arabic",Tahoma,Arial,sans-serif;font-kerning:normal;font-variant-ligatures:common-ligatures contextual;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
-    html[lang="ar"] :where(h1,h2,h3,p,a,button,span,b,strong,small,li,output){letter-spacing:0!important;text-transform:none!important;font-feature-settings:"liga" 1,"rlig" 1,"calt" 1,"kern" 1}
+    html[lang="ar"] :where(h1,h2,h3,p,a,button,span,b,strong,small,li,output){font-family:"Noto Sans Arabic","Geeza Pro","SF Arabic",Tahoma,Arial,sans-serif!important;letter-spacing:0!important;text-transform:none!important;font-feature-settings:"liga" 1,"rlig" 1,"calt" 1,"kern" 1}
     html[lang="ar"] .ink-statement h1,html[lang="ar"] .section-heading h2,html[lang="ar"] .contact-card h2{line-height:1.18;letter-spacing:0!important}
     html[lang="ar"] .eyebrow{line-height:1.8}.bidi-ltr{direction:ltr;unicode-bidi:isolate}.bidi-rtl{direction:rtl;unicode-bidi:isolate}
+    .ink-word{font-family:"Noto Sans Arabic","Noto Sans",Arial,sans-serif;font-weight:900}
+    html[lang="ar"] .ink-word{font-family:"Noto Sans Arabic","Geeza Pro","SF Arabic",Tahoma,sans-serif;font-size:48px;text-anchor:middle;direction:rtl;unicode-bidi:isolate}
+    html[lang="ar"] .ink-play{transform:rotate(5deg);transform-origin:952px 390px}
   </style>
 </head>
 <body>
@@ -107,7 +111,7 @@
           <path d="M250 170 q30 -55 66 0 q28 45 65 -5" stroke-width="3"/>
           <path d="M904 120 q44 17 68 -23 M938 91 l18 -34 M955 104 l40 -13"/>
         </g>
-        <g fill="currentColor" font-family="Arial Black,Arial" font-weight="900"><text x="170" y="170" font-size="62" transform="rotate(-13 170 170)" data-ar="نعم!" data-en="YES!">نعم!</text><text x="850" y="390" font-size="72" transform="rotate(8 850 390)" data-ar="شغّل!" data-en="PLAY!">شغّل!</text><text x="470" y="120" font-size="20" letter-spacing="8">VYRO MOTION</text></g>
+        <g fill="currentColor" font-weight="900"><text class="ink-word ink-yes" x="170" y="170" font-size="62" transform="rotate(-13 170 170)" data-ar="نعم!" data-en="YES!">نعم!</text><text class="ink-word ink-play" x="952" y="405" text-anchor="middle" font-size="62" transform="rotate(8 952 405)" data-ar="شغّل!" data-en="PLAY!">شغّل!</text><text x="470" y="120" font-family="Noto Sans,Arial,sans-serif" font-size="20" font-weight="900" letter-spacing="8">VYRO MOTION</text></g>
       </svg>
       <div class="logo-3d ink-logo" aria-label="Interactive 3D VYRO Motion logo"><div class="logo-face"><img data-vyro-new-logo src="assets/vyro-motion-elegant-logo.png" alt="VYRO Motion elegant logo"><span class="logo-caption" data-ar="نمنتج / نحرّك / نؤثر" data-en="EDIT / MOVE / IMPACT">نمنتج / نحرّك / نؤثر</span></div><i class="orbit" aria-hidden="true"></i></div>
       <div class="tool-cloud ink-tools" aria-hidden="true"><span class="tool-chip">Pr</span><span class="tool-chip">Ae</span><span class="tool-chip">DaV</span><span class="tool-chip">SFX</span></div>
