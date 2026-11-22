@@ -46,6 +46,12 @@
     .brand{gap:0}.brand img{width:154px;height:60px;object-fit:contain;border-radius:0;filter:none;box-shadow:none}.brand-copy{display:none}
     .ink-logo{width:390px;height:230px}.ink-logo .logo-face{width:330px;height:166px;background:#fff}.ink-logo .logo-face img{width:290px;height:145px;object-fit:contain;filter:none;drop-shadow:none}.ink-logo .logo-caption{bottom:-15px}
     @media(max-width:680px){.brand img{width:122px;height:48px;box-shadow:none}.ink-logo{width:250px;height:160px;top:170px}.ink-logo .logo-face{width:218px;height:110px;box-shadow:6px 7px 0 #111,12px 14px 0 #d2cfc8}.ink-logo .logo-face img{width:190px;height:95px}.ink-logo .logo-caption{bottom:-16px}}
+
+    /* Full-width Dubai skyline reference background */
+    .dubai-reference{position:absolute;z-index:0;left:50%;top:58px;translate:-50% 0;width:100vw;max-width:none;height:640px;object-fit:cover;object-position:center 67%;opacity:.22;filter:grayscale(1) contrast(1.22);mix-blend-mode:multiply;pointer-events:none;transform:translate3d(calc(var(--ix,0px)*-.35),calc(var(--iy,0px)*-.35),0);transition:transform .08s linear}
+    .ink-statement{background:transparent}.ink-statement .eyebrow,.ink-statement h1,.ink-statement p{text-shadow:0 1px 0 #fff,0 0 14px #fff,0 0 28px #fff}.ink-statement .hero-actions{filter:drop-shadow(0 8px 18px #fff)}
+    @media(max-width:1050px){.dubai-reference{width:100vw;height:590px;top:80px;object-position:center 68%}}
+    @media(max-width:680px){.dubai-reference{top:115px;width:100vw;height:470px;object-position:center 68%;opacity:.18}}
   </style>
 </head>
 <body>
@@ -58,6 +64,7 @@
 
   <main id="top">
     <section class="hero adwhales-hero"><div class="shell ink-stage reveal">
+      <img class="dubai-reference" src="assets/dubai-skyline-reference.jpg" alt="" aria-hidden="true">
       <svg class="ink-art" viewBox="0 0 1200 650" aria-hidden="true">
         <g fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
           <path d="M300 100 L878 142 L850 522 L335 500 Z"/>
