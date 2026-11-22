@@ -57,7 +57,9 @@
     body,button,input,textarea,select{font-family:"Noto Sans Arabic","Noto Sans","Geeza Pro","SF Arabic",Tahoma,Arial,sans-serif}
     html[lang="ar"] body{font-family:"Noto Sans Arabic","Geeza Pro","SF Arabic",Tahoma,Arial,sans-serif;font-kerning:normal;font-variant-ligatures:common-ligatures contextual;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
     html[lang="ar"] :where(h1,h2,h3,p,a,button,span,b,strong,small,li,output){font-family:"Noto Sans Arabic","Geeza Pro","SF Arabic",Tahoma,Arial,sans-serif!important;letter-spacing:0!important;text-transform:none!important;font-feature-settings:"liga" 1,"rlig" 1,"calt" 1,"kern" 1}
-    html[lang="ar"] .ink-statement h1,html[lang="ar"] .section-heading h2,html[lang="ar"] .contact-card h2{line-height:1.18;letter-spacing:0!important}
+    html[lang="ar"] .ink-statement h1,html[lang="ar"] .contact-card h2{line-height:1.18;letter-spacing:0!important}
+    html[lang="ar"] .section-heading h2{font-size:clamp(2.7rem,5vw,5.6rem);line-height:1.32;letter-spacing:0!important;padding-block:.12em;margin-top:12px;text-wrap:balance;overflow:visible}
+    @media(max-width:680px){html[lang="ar"] .section-heading h2{font-size:2.75rem;line-height:1.38}}
     html[lang="ar"] .eyebrow{line-height:1.8}.bidi-ltr{direction:ltr;unicode-bidi:isolate}.bidi-rtl{direction:rtl;unicode-bidi:isolate}
     .ink-word{font-family:"Noto Sans Arabic","Noto Sans",Arial,sans-serif;font-weight:900}
     html[lang="ar"] .ink-word{font-family:"Noto Sans Arabic","Geeza Pro","SF Arabic",Tahoma,sans-serif;font-size:48px;text-anchor:middle;direction:rtl;unicode-bidi:isolate}
